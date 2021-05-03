@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1ff3fcc7d1.js" crossorigin="anonymous"></script>
+    <script language="JavaScript" type="text/JavaScript" src="js/validacion.js"></script>
+    <title>Inicio</title>
+</head>
+
+<body>
+    <div class="login-box">
+        <h1>Registro</h1>
+        <form name="formulario" method="post" action="Registro" onsubmit="return validarRegistro(this)">
+            <div class="textbox">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Nombre" name="nombre" required>
+            </div>
+            
+            <div class="textbox">
+            <i class="fas fa-male"></i>
+            <input type="text" placeholder="Apellido Paterno" name="appat" required>
+            </div>
+            
+            <div class="textbox">
+            <i class="fas fa-female"></i>
+            <input type="text" placeholder="Apellido Materno" name="apmat" required>
+            </div>
+            
+            <div class="textbox">
+            <i class="fas fa-user-lock"></i>
+            <input type="password" placeholder="Contraseña" name="password" required>
+            </div>
+            
+            <div class="textbox">
+            <i class="fas fa-sort-numeric-up-alt"></i>
+            <input type="number" placeholder="Edad" name="edad" min="01" max="99" size="2" required>
+            </div>
+            
+            <div class="textbox">
+            <p>Por ejemplo, escriba 27 de mayo del 2004 como "27052004"</p>
+            <i class="fas fa-calendar-alt"></i>
+            <input type="text" name="birth" placeholder="Fecha de Nacimiento" required onkeypress="return validarn(event)">
+            </div>
+            
+            <div class="textbox">
+            <i class="fas fa-house-user"></i>
+            <input type="text" placeholder="Domicilio" name="domicilio" required>
+            </div>
+            
+            <div class="textbox">
+            <i class="fas fa-phone"></i>
+            <input type="text" placeholder="Teléfono" name="tel" required>
+            </div>
+            
+            <div class="textbox">
+            <i class="fas fa-mobile-alt"></i>
+            <input type="text" placeholder="Celular" name="cel" required>
+            </div>
+            
+                <input type="submit" value="Registrar" class="boton">
+                <input type="reset" value="Borrar Registro" class="boton">
+            </form>
+    </div>
+</body>
+</html>
